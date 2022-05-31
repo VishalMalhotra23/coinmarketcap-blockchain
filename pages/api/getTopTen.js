@@ -9,8 +9,10 @@ export default function handler(req, res) {
         },
       }
     )
+
     const data = await response.json()
     res.status(200).json({ data })
+    console.log('here is the response:', data)
   }
   getData()
 }
